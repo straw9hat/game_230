@@ -1,7 +1,2 @@
-﻿  Source.cpp
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(114,21): warning C4244: '-=': conversion from 'double' to 'sf::Uint8', possible loss of data
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(119,21): warning C4244: '+=': conversion from 'double' to 'sf::Uint8', possible loss of data
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(145,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(149,100): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(149,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  LINK : C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\x64\Debug\SFMLart.exe not found or not built by the last incremental link; performing full link
   SFMLart.vcxproj -> C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\x64\Debug\SFMLart.exe
