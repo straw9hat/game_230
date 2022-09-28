@@ -1,0 +1,16 @@
+﻿  Source.cpp
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(53,21): warning C4244: '-=': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(57,21): warning C4244: '+=': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(78,47): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(78,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(82,101): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\Source.cpp(82,55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  SFMLart.vcxproj -> C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-1\SFMLart\x64\Debug\SFMLart.exe
