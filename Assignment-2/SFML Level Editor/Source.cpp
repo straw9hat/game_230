@@ -6,6 +6,7 @@
 #include <SFML/OpenGL.hpp>
 #include <SFML/Main.hpp>
 #include <iostream>
+#include<fstream>
 using namespace std;
 
 
@@ -24,6 +25,7 @@ int selectedSprite;
 sf::Sprite sprite;
 int label = 100;
 bool flag1 = false;
+bool flag2 = false;
 
 
 int main()
@@ -98,25 +100,35 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
         }
     }
 
+    //save level in a file
+    if (event.key.code == sf::Keyboard::S)
+    {
+        ofstream fout("level.txt");
+        for (int i = 0; i < 9; i++)
+        {
+            for (int j = 0; j < 16; j++)
+            {
+                fout << arrLevel[i][j] << " ";
+            }
+            fout << endl;
+        }
+    }
+
     //get mouse pointer location
     int mouseX = (sf::Mouse::getPosition(window).x / 70) * 70;
     int mouseY = (sf::Mouse::getPosition(window).y / 70) * 70;
     
-    if (label== mouseX * 9 + mouseY)
+    if (label!= mouseX * 9 + mouseY)
     {
-        sprite.setPosition(mouseX, mouseY);
-        flag1 = true;
-        mask.setPosition((label%16)*70,(label/16)*70);
-    }
-    else
-    {
-        flag1 = false;
+        //sprite.setPosition(mouseX, mouseY);
+        //flag1 = true;
+        //mask.setPosition(int(label/16)*70,int(label%16)*70);
     }
     if (event.key.code == sf::Mouse::Left)
     {
         //cout << sf::Mouse::getPosition(window).x << " " << sf::Mouse::getPosition(window).y << endl;
         sprite.setPosition(mouseX, mouseY);
-        arrLevel[sf::Mouse::getPosition(window).y / 70][sf::Mouse::getPosition(window).x / 70] = 0;
+        arrLevel[mouseX/70][mouseY/70] = selectedSprite;
     }
 
     //erase
@@ -142,17 +154,17 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
     //switch sprites
     if (event.key.code == sf::Keyboard::Up)
     {
-        (selectedSprite == sizeof(texture) - 1) ? 0 : selectedSprite++;
+        (selectedSprite == sizeof(texture)/sizeof(sf::Texture) - 1) ? 0 : selectedSprite++;
         sprite.setTexture(texture[selectedSprite]);
     }
     else if (event.key.code == sf::Keyboard::Down)
     {
-        (selectedSprite == 0) ? sizeof(texture) - 1 : selectedSprite--;
+        (selectedSprite == 0) ? sizeof(texture)/ sizeof(sf::Texture) - 1 : selectedSprite--;
         sprite.setTexture(texture[selectedSprite]);
     }
 
     label = mouseX * 9 + mouseY;
-    cout << mouseX << " " << mouseY << endl;
+    //cout << mouseX << " " << mouseY << endl;
 }
 
 void render(sf::RenderWindow& window)
