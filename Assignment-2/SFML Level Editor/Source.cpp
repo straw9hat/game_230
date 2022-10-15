@@ -154,12 +154,13 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
     //switch sprites
     if (event.key.code == sf::Keyboard::Up)
     {
-        (selectedSprite == sizeof(texture)/sizeof(sf::Texture) - 1) ? 0 : selectedSprite++;
+        cout << sizeof(texture) / sizeof(sf::Texture);
+        (selectedSprite >= sizeof(texture)/sizeof(sf::Texture) - 1) ? selectedSprite = 0 : selectedSprite++;
         sprite.setTexture(texture[selectedSprite]);
     }
     else if (event.key.code == sf::Keyboard::Down)
     {
-        (selectedSprite == 0) ? sizeof(texture)/ sizeof(sf::Texture) - 1 : selectedSprite--;
+        (selectedSprite <= 0) ? selectedSprite = sizeof(texture)/ sizeof(sf::Texture) - 1 : selectedSprite--;
         sprite.setTexture(texture[selectedSprite]);
     }
 
