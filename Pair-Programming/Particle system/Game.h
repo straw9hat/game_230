@@ -14,18 +14,20 @@
  /* STL Includes */
 #include <iostream>
 
+extern int xPos, yPos;
+
 // Place our classes, functions, variables, and so forth in their own namespace to avoid naming collisions
 namespace gm {
 	class Game {
 	public:
 		/* Protoypes */
 		// Constructor
-		sf::CircleShape shape;
+		//sf::Shape* shape;
 		Game();
 		// Game Loop Programming Pattern Methods
 		void handleInput(sf::RenderWindow& window);
-		void update(sf::RenderWindow& window, sf::CircleShape obj);
-		void render(sf::RenderWindow& window, sf::CircleShape obj);
+		void update(sf::RenderWindow& window);
+		void render(sf::RenderWindow& window);
 		// Destructor
 		~Game();
 	};

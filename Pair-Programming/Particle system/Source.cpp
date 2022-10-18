@@ -24,22 +24,23 @@ int main()
 {
     // Create the window for the game
     RenderWindow window(sf::VideoMode(800, 600), "SFML works!");
-
+    
     Game g;
-    g.shape.setPosition(200, 200);
 
     // This is our game loop!
     // All input, logic, and rendering should be handled here
     while (window.isOpen())
     {
         // Our game object handles the game loop programming pattern
+        xPos = sf::Mouse::getPosition(window).x;
+        yPos = sf::Mouse::getPosition(window).y;
         g.handleInput(window);
 
-        g.update(window,g.shape);
+        g.update(window);
 
-        g.render(window, g.shape);
+        g.render(window);
     }
-
+    
     // The game has exited normally so send a normal exit status integer back
     return 0;
 }
