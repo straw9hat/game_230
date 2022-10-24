@@ -100,6 +100,32 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
         }
     }
 
+    //load a level
+    if (event.key.code == sf::Keyboard::L)
+    {
+        string line;
+        ifstream fin;
+        fin.open("level.txt");
+        int ctr = 0;
+        while (fin)
+        {
+            getline(fin, line);
+            for (int i = 0; i < 8; i++)
+            {
+                if (i > 8 || ctr>15)
+                    break;
+                sprite.setPosition(i*70, ctr*70);
+                if((int)line[2 * i] != -1)
+                    sprite.setTexture(texture[(int)line[2 * i]]);
+                arrLevel[i][ctr] = (int)line[2*i];
+                ctr++;
+                window.draw(sprite);
+            }
+            //cout << line << endl;
+        }
+
+    }
+
     //save level in a file
     if (event.key.code == sf::Keyboard::S)
     {

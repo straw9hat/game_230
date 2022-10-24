@@ -3,16 +3,13 @@
 
 using namespace gm;
 
-
-std::random_device dev;
-std::mt19937 rng(dev());
-std::uniform_int_distribution<std::mt19937::result_type> range(1, 100);
+#include "Random.h"
 
 int xPos = 0, yPos = 0;
 sf::Shape* shape;
 class Particle {
 	public:
-		sf::Vector2f velocity = sf::Vector2f(0.5 - range(rng)/100, 0.5 - range(rng)/100);
+		sf::Vector2f velocity = sf::Vector2f(0.5 - (float)Random::Range(1,99) / 100, 0.5 - (float)Random::Range(1, 99) / 100);
 		int lifespan = 50;
 	
 		Particle() {
