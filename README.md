@@ -1,2 +1,2 @@
 # game_230
-Latest assignment in Pair Programming 2 folder
+Latest assignment in Particle System 2 folder
