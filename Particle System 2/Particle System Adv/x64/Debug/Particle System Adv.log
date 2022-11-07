@@ -1,0 +1,27 @@
+﻿  Game.cpp
+C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\Game.h(55,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\Game.cpp(58,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\Game.cpp(58,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\Game.cpp(59,95): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\Game.cpp(59,54): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\Game.cpp(84,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\Game.cpp(84,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\Game.cpp(85,93): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\Game.cpp(85,52): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Particle System Adv.vcxproj -> C:\Users\Nikki\Documents\Assignments\Game_230\Particle System 2\Particle System Adv\x64\Debug\Particle System Adv.exe

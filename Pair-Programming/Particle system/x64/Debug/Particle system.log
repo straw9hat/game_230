@@ -1,14 +1,17 @@
 ﻿  Game.cpp
-C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\Game.cpp(12,84): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\Game.cpp(11,126): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\Game.cpp(12,44): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\Game.cpp(11,80): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
+C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\Game.cpp(16,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\Game.cpp(17,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\Game.cpp(17,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\Game.cpp(51,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\Game.cpp(51,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Particle system.vcxproj -> C:\Users\Nikki\Documents\Assignments\Game_230\Pair-Programming\Particle system\x64\Debug\Particle system.exe
