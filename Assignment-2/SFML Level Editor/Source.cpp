@@ -23,6 +23,7 @@ int arrLevel[9][16];
 sf::Texture texture[20];
 int selectedSprite;
 sf::Sprite sprite;
+sf::Sprite *layOver;
 int label = 100;
 bool flag1 = false;
 bool flag2 = false;
@@ -78,11 +79,16 @@ void setup(sf::RenderWindow& window)
     }
     selectedSprite = 0;
     sprite.setTexture(texture[selectedSprite]);
+    layOver = new sf::Sprite();
+    layOver->setTexture(texture[selectedSprite]);
+    layOver->setPosition(0, 0);
 }
 
 void update(sf::RenderWindow& window)
 {
-
+    int mouseX = (sf::Mouse::getPosition(window).x / 70) * 70;
+    int mouseY = (sf::Mouse::getPosition(window).y / 70) * 70;
+    layOver->setPosition(mouseX, mouseY);
 }
 
 void handleInput(sf::RenderWindow& window, sf::Event& event)
@@ -138,6 +144,7 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
             }
             fout << endl;
         }
+        cout << "saved" << endl;
     }
 
     //get mouse pointer location
@@ -162,6 +169,7 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
     {
         //cout << "delete attempted" << endl;
         mask.setPosition(mouseX, mouseY);
+        arrLevel[mouseX / 70][mouseY / 70] = -1;
     }
 
     //stash it later
@@ -183,11 +191,13 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
         cout << sizeof(texture) / sizeof(sf::Texture);
         (selectedSprite >= sizeof(texture)/sizeof(sf::Texture) - 1) ? selectedSprite = 0 : selectedSprite++;
         sprite.setTexture(texture[selectedSprite]);
+        layOver->setTexture(texture[selectedSprite]);
     }
     else if (event.key.code == sf::Keyboard::Down)
     {
         (selectedSprite <= 0) ? selectedSprite = sizeof(texture)/ sizeof(sf::Texture) - 1 : selectedSprite--;
         sprite.setTexture(texture[selectedSprite]);
+        layOver->setTexture(texture[selectedSprite]);
     }
 
     label = mouseX * 9 + mouseY;
@@ -196,8 +206,9 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
 
 void render(sf::RenderWindow& window)
 {
-    //window.clear();
+    window.clear();
     window.draw(sprite);
     window.draw(mask);
+    window.draw(*layOver);
     window.display();
 }
