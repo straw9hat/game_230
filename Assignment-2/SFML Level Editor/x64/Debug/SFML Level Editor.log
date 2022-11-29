@@ -1,8 +1,10 @@
 ﻿  Source.cpp
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(117,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(117,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(156,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(156,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(164,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(164,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(91,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(91,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(123,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(123,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(163,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(163,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(171,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\Source.cpp(171,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   SFML Level Editor.vcxproj -> C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-2\SFML Level Editor\x64\Debug\SFML Level Editor.exe
