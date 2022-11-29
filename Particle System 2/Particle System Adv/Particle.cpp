@@ -1,4 +1,4 @@
-#include "Game.h"
+#include "Particle.h"
 #include "Random.h"
 
 
@@ -6,7 +6,7 @@ using namespace gm;
 
 
 Particle::Particle() {
-	lifeSpan = 80;
+	//lifeSpan = 1000;
 	isAlive = true;
 }
 

@@ -1,4 +1,12 @@
 #include "Game.h"
+#include "CircleParticle.h"
+#include "CircleParticleEffect.h"
+#include "Particle.h"
+#include "ParticleEffect.h"
+#include "RectangleParticle.h"
+#include "RectangleParticleEffect.h"
+#include "SquareParticle.h"
+#include "SquareParticleEffect.h"
 
 using namespace gm;
 
@@ -33,9 +41,6 @@ void Game::handleInput(sf::RenderWindow& window) {
 		}
 		if (event.key.code == sf::Keyboard::E) {
 			choice = 3;
-		}
-		if (event.key.code == sf::Mouse::Right) {
-			delete p;
 		}
 		if (event.key.code == sf::Mouse::Left) {
 			ctr = p->particleArray[0].lifeSpan;

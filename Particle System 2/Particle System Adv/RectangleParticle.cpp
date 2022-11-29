@@ -1,4 +1,4 @@
-#include "Game.h"
+#include "RectangleParticle.h"
 #include "Random.h"
 
 using namespace gm;

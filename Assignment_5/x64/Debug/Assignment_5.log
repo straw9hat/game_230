@@ -1,0 +1,5 @@
+﻿  GameUI.cpp
+  Paddle.cpp
+  Generating Code...
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment_5\GameUI.cpp(14): warning C4172: returning address of local variable or temporary
+  Assignment_5.vcxproj -> C:\Users\Nikki\Documents\Assignments\Game_230\Assignment_5\x64\Debug\Assignment_5.exe

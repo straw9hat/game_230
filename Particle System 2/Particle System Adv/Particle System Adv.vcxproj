@@ -145,8 +145,16 @@
     <ClCompile Include="SquareParticleEffect.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CircleParticle.h" />
+    <ClInclude Include="CircleParticleEffect.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="ParticleEffect.h" />
     <ClInclude Include="Random.h" />
+    <ClInclude Include="RectangleParticle.h" />
+    <ClInclude Include="RectangleParticleEffect.h" />
+    <ClInclude Include="SquareParticle.h" />
+    <ClInclude Include="SquareParticleEffect.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
