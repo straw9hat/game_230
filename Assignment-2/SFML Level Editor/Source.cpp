@@ -109,27 +109,23 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
     //load a level
     if (event.key.code == sf::Keyboard::L)
     {
-        string line;
+        char c;
         ifstream fin;
         fin.open("level.txt");
         int ctr = 0;
-        while (fin)
-        {
-            getline(fin, line);
-            for (int i = 0; i < 8; i++)
+        if (fin.is_open()) {
+            
+            for (int i = 0; i < 9; i++)
             {
-                if (i > 8 || ctr>15)
-                    break;
-                sprite.setPosition(i*70, ctr*70);
-                if((int)line[2 * i] != -1)
-                    sprite.setTexture(texture[(int)line[2 * i]]);
-                arrLevel[i][ctr] = (int)line[2*i];
-                ctr++;
-                window.draw(sprite);
+                for (int j = 0; j < 16; j++)
+                {
+                    
+                    fin >> arrLevel[i][j];
+                }
             }
-            //cout << line << endl;
         }
-
+        
+        fin.close();
     }
 
     //save level in a file
@@ -145,6 +141,7 @@ void handleInput(sf::RenderWindow& window, sf::Event& event)
             fout << endl;
         }
         cout << "saved" << endl;
+        fout.close();
     }
 
     //get mouse pointer location
