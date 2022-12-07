@@ -1,3 +1,3 @@
 # game_230
-Latest assignment in Particle System 2 folder
+Latest assignment in Assignment 5 folder
 Pair programming partner - Vishwaas Khare
