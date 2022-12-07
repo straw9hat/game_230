@@ -15,11 +15,18 @@
 
  /* Our Includes */
 #include "Box.h"
+#include "Ball.h"
+#include "PlayerController.h"
+#include "AIController.h"
+#include "GameUI.h"
+#include "SoundManager.h"
 
 // Place our classes, functions, variables, and so forth in their own namespace to avoid naming collisions
 namespace gm {
 	const int GameWidth = 640;
 	const int GameHeight = 640;
+
+	enum GAMESTATE {START, INGAME, GAMEOVER};
 
 	/* Our Game Class                               *
 	 * Implements the Game Loop Programming Pattern */
@@ -30,15 +37,28 @@ namespace gm {
 		// For tracking/maintaining delta time
 		sf::Clock clock;
 		float deltaTime;
+		int ctr;
+		int checker;
+		GAMESTATE state;
 		// Our game objects
 		Box box1;
 		Box box2;
+		Box box3;
+		Box box4;
+		Ball ball;
+		PlayerController player1;
+		AIController aI;
+		GameUI playerScore;
+		GameUI aiScore;
+		GameUI winner;
+		SoundManager music;
 	public:
 		/* Protoypes */
 		// Constructor
 		Game();
 		// Will start and manage the game loop programming pattern
 		void run();
+		void restart();
 		// Game Loop Programming Pattern Methods
 		void handleInput();
 		void update();

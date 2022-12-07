@@ -5,12 +5,12 @@
 
 namespace gm {
     // Box movement speed
-    const int PlayerMovementSpeedPerSecond = 300;
+    const int PlayerMovementSpeedPerSecond = 100;
 
     enum MovementDirection {
         None = 0,
-        Left = -1,
-        Right = 1
+        Up = -1,
+        Down = 1
     };
 
     class Box :

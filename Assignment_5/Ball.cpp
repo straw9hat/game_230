@@ -4,12 +4,14 @@
 using namespace sf;
 using namespace gm;
 
-Ball::Ball() {
-	body.setPosition(400, Random::Range(1, 600));
+Ball::Ball(const Vector2f& position, const Vector2f& size) : GameObject(position, size) {
+	body.setPosition(position);
+	body.setSize(size);
+	velocity = Vector2f(200, 80);
 }
 
 void Ball::update(sf::RenderWindow& window, float deltaTime) {
-	move(Vector2f(PlayerMovementSpeedPerSecond * direction * deltaTime, 0));
+	move(deltaTime * velocity);
 }
 
 void Ball::render(sf::RenderWindow& window, float deltaTime) {
@@ -28,13 +30,6 @@ void Ball::move(const Vector2f& velocity) {
 	body.setPosition(position);
 }
 
-void Ball::setMovmentDirection(MovementDirection direction) {
-	this->direction = direction;
-}
-
-MovementDirection Ball::getMovementDirection() const {
-	return direction;
-}
 
 
 const Color& Ball::getFillColor() const {
