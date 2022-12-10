@@ -1,0 +1,3 @@
+﻿  Game.cpp
+C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-6\Breakout\Game.cpp(83,12): warning C4553: '==': result of expression not used; did you intend '='?
+  Breakout.vcxproj -> C:\Users\Nikki\Documents\Assignments\Game_230\Assignment-6\Breakout\x64\Debug\Breakout.exe
